@@ -19,7 +19,7 @@ int main() {
 	}
 	else if (menu_choice == 2) {
 		while(!registration()) {};
-		std::cout << "Good job, now you can login to your new account";
+		std::cout << "Good job, now you can login to your new account" << std::endl;
 		is_logged = login();
 	}
 	else if (menu_choice == 3) {
@@ -45,7 +45,7 @@ int main() {
 bool login() {
 	std::string username, password, u, p;
 	std::fstream users;
-	users.open("Users.txt", std::ios::in | std::ios::out);
+	users.open("Users.txt", std::ios::in);
 	int result = 0;
 	std::cout << "Enter your username: ";
 	std::cin >> username;
@@ -82,7 +82,7 @@ bool registration() {
 	users.open("Users.txt", std::ios::in | std::ios::out | std::ios::app);
 	users << std::endl << username << " " << password;
 	users.close();
-	std::cout << "Registration successful, welcome " + username + "!";
+	// std::cout << "Registration successful, welcome " + username + "!" << std::endl;
 	system("cls");
 
 	return true;
