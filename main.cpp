@@ -15,7 +15,9 @@ int main() {
 	std::cin >> menu_choice;
 	system("cls");
 	if (menu_choice == 1) {
-		is_logged = login();
+		while (is_logged == false) {
+			is_logged = login();
+		};
 	}
 	else if (menu_choice == 2) {
 		while(!registration()) {};
@@ -27,7 +29,7 @@ int main() {
 		return 0;
 	}
 	if(is_logged==true){
-		std::cout << "Choose your game:\n1.Tic Tac Toe";
+		std::cout << "Choose your game:\n1.Tic Tac Toe" << std::endl;
 		std::cin >> game_choice;
 		if (game_choice == 1) {
 			Tictactoe game;
