@@ -49,6 +49,7 @@ bool login() {
 	std::fstream users;
 	users.open("Users.txt", std::ios::in);
 	int result = 0;
+	std::cout << "~~~~~ LOGIN PANEL ~~~~~\n";
 	std::cout << "Enter your username: ";
 	std::cin >> username;
 	std::cout << "Enter your password: ";
@@ -76,6 +77,7 @@ bool registration() {
 	std::string username, password;
 	std::fstream users;
 
+	std::cout << "~~~~~ REGISTRATION PANEL ~~~~~\n";
 	std::cout << "Enter new username:";
 	std::cin >> username;
 	std::cout << "Enter your password: ";
