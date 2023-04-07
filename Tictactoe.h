@@ -5,6 +5,9 @@
 
 class Tictactoe {
 public:
-	char board[9] = { '-','-','-','-','-','-','-','-','-'};
+	char board[9] = {'-','-','-','-','-','-','-','-','-'};
 	void showboard();
+	void game();
+	bool move(int move, char player);
+	bool CheckResult();
 };

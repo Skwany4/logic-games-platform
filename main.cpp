@@ -33,13 +33,13 @@ int main() {
 		std::cin >> game_choice;
 		if (game_choice == 1) {
 			Tictactoe game;
-			game.showboard();
+			game.game();
+			std::cout << "Good job, you finished game!";
 		}
 	}
 	else {
 		std::cout << "Error, run application once again";
 	}
-	
 
 }
 
