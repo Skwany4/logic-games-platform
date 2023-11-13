@@ -13,6 +13,7 @@ int main() {
 		std::cout << "~~~~~ MENU ~~~~~\n";
 		std::cout << "Choose your action:\n1.Login\n2.Register\n3.EXIT" << std::endl;
 		std::cin >> menu_choice;
+		std::cout << "Niez³a kaka";
 		system("cls");
 		if (menu_choice == 1) {
 			while (is_logged == false) {
